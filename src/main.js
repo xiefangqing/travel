@@ -11,9 +11,12 @@ import 'styles/reset.css'
 import 'styles/border.css'
 // 因为很多页面都需要用到iconfont，所以直接在这引入
 import 'styles/iconfont.css'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
 
 Vue.config.productionTip = false
 fastclick.attach(document.body)
+Vue.use(VueAwesomeSwiper)
 
 // 下面的注释不能删
 /* eslint-disable no-new */
