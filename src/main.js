@@ -6,9 +6,11 @@ import router from './router'
 // 引入fastclick，解决300ms点击延迟问题
 import fastclick from 'fastclick'
 // 引入reset.css，重置样式，在不同的手机浏览器上，默认的样式是不统一的，需要把它们的初始化样式统一起来。
-import './assets/styles/reset.css'
+import 'styles/reset.css'
 // 引入border.css，解决移动端1px边框的问题：有的手机屏幕分辨率比较高，是2倍屏或是3倍屏，在页面上写 border:1px solid green; 1px其实指的是css像素，在2倍屏会对应显示2个物理像素。说白了就是在多倍屏中1px边框会被显示成多像素。通过css3的scale实现真正1px物理像素
-import './assets/styles/border.css'
+import 'styles/border.css'
+// 因为很多页面都需要用到iconfont，所以直接在这引入
+import 'styles/iconfont.css'
 
 Vue.config.productionTip = false
 fastclick.attach(document.body)
