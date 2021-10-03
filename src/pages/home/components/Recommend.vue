@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img class="item-img" :src="item.imgUrl"/>
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -17,25 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p74/201211/05/dba2176afa7fcf8a93835fbb.jpg_200x200_d4a635eb.jpg',
-        title: '台州海洋世界',
-        desc: '台州首站，浪漫的海洋主题乐园'
-      }, {
-        id: '0002',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p74/201211/05/dba2176afa7fcf8a93835fbb.jpg_200x200_d4a635eb.jpg',
-        title: '台州海洋世界',
-        desc: '台州首站，浪漫的海洋主题乐园'
-      }, {
-        id: '0003',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p74/201211/05/dba2176afa7fcf8a93835fbb.jpg_200x200_d4a635eb.jpg',
-        title: '台州海洋世界',
-        desc: '台州首站，浪漫的海洋主题乐园'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
