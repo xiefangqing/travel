@@ -36,6 +36,7 @@ export default {
       // this.$store.commit('changeCity', city)
       this.changeCity(city)
       this.$router.push('/')
+      this.keyword = ''
     },
     ...mapMutations(['changeCity'])
   },
@@ -67,7 +68,9 @@ export default {
     }
   },
   mounted () {
-    this.scroll = new Bscroll(this.$refs.search)
+    this.scroll = new Bscroll(this.$refs.search, {
+      click: true
+    })
   },
   updated () {
     this.scroll.refresh()

@@ -59,7 +59,7 @@ export default {
             this.$emit('change', this.letters[index])
           }
           console.log(1)
-        }, 16)
+        }, 8)
       }
     },
     handleTouchEnd () {

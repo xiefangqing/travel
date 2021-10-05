@@ -74,7 +74,9 @@ export default {
   },
   mounted () {
     // setTimeout(() => { this.scroll = new BScroll(this.$refs.wrapper, {}) }, 20)
-    this.scroll = new BScroll(this.$refs.wrapper)
+    this.scroll = new BScroll(this.$refs.wrapper, {
+      click: true
+    })
   },
   updated () {
     this.scroll.refresh()
