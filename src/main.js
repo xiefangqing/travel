@@ -13,6 +13,7 @@ import 'styles/border.css'
 import 'styles/iconfont.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
+import store from './store'
 
 Vue.config.productionTip = false
 fastclick.attach(document.body)
@@ -26,6 +27,7 @@ new Vue({
   el: '#app',
   // 路由就是根据网址的不同，返回不同的内容给用户
   router,
+  store,
   // 注册的局部组件
   components: {App},
   template: '<App/>'
