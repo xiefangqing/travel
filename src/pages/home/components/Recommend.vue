@@ -7,7 +7,9 @@
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
           <p class="item-desc">{{item.desc}}</p>
-          <button class="item-button">查看详情</button>
+          <router-link :to="'/detail/' + item.id">
+            <button class="item-button">查看详情</button>
+          </router-link>
         </div>
       </li>
     </ul>
