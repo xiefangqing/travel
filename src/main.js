@@ -26,6 +26,5 @@ new Vue({
   router,
   store,
   // 注册的局部组件
-  components: {App},
-  template: '<App/>'
+  render: h => h(App)
 })

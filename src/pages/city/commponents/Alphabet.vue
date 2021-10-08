@@ -23,7 +23,7 @@ export default {
   computed: {
     letters () {
       const letters = []
-      for (let i in this.cities) {
+      for (const i in this.cities) {
         letters.push(i)
       }
       return letters
@@ -37,7 +37,7 @@ export default {
     }
   },
   updated () {
-    this.startY = this.$refs['A'][0].offsetTop
+    this.startY = this.$refs.A[0].offsetTop
   },
   methods: {
     handleLetterClick (e) {

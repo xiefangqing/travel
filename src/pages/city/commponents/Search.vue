@@ -18,7 +18,7 @@
 
 <script>
 import Bscroll from 'better-scroll'
-import {mapMutations} from 'vuex'
+import { mapMutations } from 'vuex'
 export default {
   name: 'CitySearch',
   props: {
@@ -51,7 +51,7 @@ export default {
           this.list = []
           return
         }
-        for (let i in this.cities) {
+        for (const i in this.cities) {
           this.cities[i].forEach(value => {
             if (value.spell.includes(this.keyword) || value.name.includes(this.keyword)) {
               result.push(value)
@@ -71,9 +71,6 @@ export default {
     this.scroll = new Bscroll(this.$refs.search, {
       click: true
     })
-  },
-  updated () {
-    this.scroll.refresh()
   }
 }
 </script>

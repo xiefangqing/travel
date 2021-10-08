@@ -9,16 +9,3 @@
     </keep-alive>
   </div>
 </template>
-
-<!-- 组件的逻辑 -->
-<script>
-// 这是个叫App的组件
-export default {
-  name: 'App'
-}
-</script>
-
-<!-- 组件的css样式 -->
-<style>
-
-</style>
