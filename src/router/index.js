@@ -13,6 +13,8 @@ export default new Router({
     path: '/',
     name: 'Home',
     component: Home
+    // 异步组件
+    // component: () => import('@/pages/home/Home')
   }, {
     path: '/city',
     name: 'City',
